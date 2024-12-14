@@ -1,4 +1,11 @@
-
+# cd /Users/alin/Downloads/awesome-streamlit-langchain-main
+# git init
+# git add .
+# git status
+# git commit -m "Initial commit"
+# git remote add origin https://github.com/15968921037/awesome-streamlit-langchain-main.git
+# git branch -M main # 如果是第一次推送，确保分支名为 main
+# git push -u origin main
 ##export PATH="/Users/alin/Downloads/awesome-streamlit-langchain-main/venv/bin:$PATH"
 ##streamlit run Homepage.py  
 
