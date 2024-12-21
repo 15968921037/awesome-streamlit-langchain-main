@@ -43,3 +43,6 @@ typing_extensions==4.12.2
 urllib3==2.2.3
 yarl==1.18.3
 langchain-openai==0.2.12
+langchain_community==0.3.12
+sentence_transformers==3.3.1
+chromadb==0.5.23
