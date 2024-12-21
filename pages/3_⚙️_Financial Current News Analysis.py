@@ -261,5 +261,3 @@ if st.button("Clear Chat", key=f"clear_{messages_key}"):
 
 
 
-with st.sidebar:
-     st.image("./images/your_image.png")
