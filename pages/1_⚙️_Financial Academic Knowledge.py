@@ -68,7 +68,7 @@ def embedding_function(text):
 def load_vectorstore():
     """Load the Chroma vector database."""
     return Chroma(
-        persist_directory="/Users/alin/Documents/course_info/P1&P2/financial robot/data/chroma_storage",
+        persist_directory="data/chroma_storage",
         embedding_function=embedding_function,
     )
 
