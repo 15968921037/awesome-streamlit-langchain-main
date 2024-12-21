@@ -1,7 +1,8 @@
 ############################################
 import streamlit as st
 from langchain.llms import OpenAI
-from langchain.vectorstores import Chroma
+#from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from sentence_transformers import SentenceTransformer
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
