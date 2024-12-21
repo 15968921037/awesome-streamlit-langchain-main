@@ -52,7 +52,7 @@ llm = ChatOpenAI(model="gpt-4o", base_url=api_url, api_key=api_key, temperature=
 
 ###################local
 # --- Configure Sentence Transformer Model ---
-
+@st.cache_resource
 def load_embedding_model():
     """Load the embedding model."""
     return SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
@@ -64,7 +64,7 @@ def embedding_function(text):
     return model.encode([text])[0].tolist()
 
 # --- Load Chroma Vectorstore ---
-
+@st.cache_resource
 def load_vectorstore():
     """Load the Chroma vector database."""
     return Chroma(
