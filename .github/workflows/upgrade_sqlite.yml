@@ -1,4 +1,4 @@
-name: Upgrade SQLite
+name: Upgrade SQLite and Install Dependencies
 
 on:
   push:
@@ -17,6 +17,14 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y sqlite3
-      
+
       - name: Verify SQLite version
         run: sqlite3 --version
+
+      - name: Clear pip cache  # 添加清理 pip 缓存步骤
+        run: |
+          pip cache purge  # 清理 pip 缓存
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt  # 安装 requirements 中的依赖
